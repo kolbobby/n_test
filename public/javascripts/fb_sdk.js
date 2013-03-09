@@ -32,7 +32,7 @@ function login() {
 
 function testAPI() {
 	FB.api('/me', function(response) {
-		$('#status').html(response.name + " | <div class='fb-login-button'></div>");
+		$('#status').html(response.name + " | <div class='fb-login-button' autologoutlink='true' perms='email,user_birthday,status_update,publish_stream'></div>");
 	});
 }
 
