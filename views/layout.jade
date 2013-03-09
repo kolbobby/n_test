@@ -14,5 +14,5 @@ html
 		#fb-root
 		script(src='/javascripts/fb_sdk.js')
 		#status
-			.fb-login-button
+			.fb-login-button autologoutlink='true' perms='email,user_birthday,status_update,publish_stream'
 		block content
