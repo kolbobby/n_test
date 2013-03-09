@@ -23,16 +23,10 @@ window.fbAsyncInit = function() {
 function login() {
 	FB.login(function(response) {
 		if (response.authResponse) {
-			testAPI();
+			//testAPI();
 		} else {
 			alert('cancelled');
 		}
-	});
-}
-
-function testAPI() {
-	FB.api('/me', function(response) {
-		alert(response.name);
 	});
 }
 

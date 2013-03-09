@@ -6,7 +6,7 @@ html
 		script(type='text/javascript')
 			$(document).ready(function() {
 				FB.api('/me', function(response) {
-					$('#status').html();
+					$('#status').html(response.name);
 				});
 			})
 		link(rel='stylesheet', href='/stylesheets/style.css')
