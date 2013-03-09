@@ -1,0 +1,23 @@
+{
+<<<<<<< HEAD
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "3.1.0",
+    "jade": "*"
+=======
+  "name": "node-example",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "2.5.x"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+>>>>>>> 991b7b37bff376e03bd6cb6db3a199ed971da687
+  }
+}
