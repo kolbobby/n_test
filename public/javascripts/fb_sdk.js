@@ -11,7 +11,7 @@ window.fbAsyncInit = function() {
 	// Additional initialization code such as adding Event Listeners goes here
 	FB.getLoginStatus(function(response) {
 		if (response.status === 'connected') {
-			alert('connected');
+			testAPI();
 		} else if (response.status === 'not_authorized') {
 			login();
 		} else {
@@ -23,7 +23,7 @@ window.fbAsyncInit = function() {
 function login() {
 	FB.login(function(response) {
 		if (response.authResponse) {
-			alert('connected');
+			testAPI();
 		} else {
 			alert('cancelled');
 		}
@@ -33,7 +33,7 @@ function login() {
 function testAPI() {
 	$(document).ready(function() {
 		FB.api('/me', function(response) {
-			$('#status').html('asdf');
+			$('#status').html(response.name);
 		});
 	})
 }
