@@ -3,9 +3,16 @@ html
 	head
 		title= title
 		script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+		script(type='text/javascript')
+			$(document).ready(function() {
+				FB.api('/me', function(response) {
+					$('#status').html();
+				});
+			})
 		link(rel='stylesheet', href='/stylesheets/style.css')
 	body
 		#fb-root
 		script(src='/javascripts/fb_sdk.js')
-		<fb:login-button autologoutlink='true' perms='email,user_birthday,status_update,publish_stream'></fb:login-button>
+		#status
+			<fb:login-button autologoutlink='true' perms='email,user_birthday,status_update,publish_stream'></fb:login-button>
 		block content
