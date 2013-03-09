@@ -31,9 +31,11 @@ function login() {
 }
 
 function testAPI() {
-	FB.api('/me', function(response) {
-		alert(response.name);
-	});
+	$(document).ready(function() {
+		FB.api('/me', function(response) {
+			alert(response.name);
+		});
+	})
 }
 
 // Load the SDK's source Asynchronously
