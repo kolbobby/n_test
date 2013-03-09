@@ -11,7 +11,7 @@ window.fbAsyncInit = function() {
 	// Additional initialization code such as adding Event Listeners goes here
 	FB.getLoginStatus(function(response) {
 		if (response.status === 'connected') {
-			alert("Connected");
+			testAPI();
 		} else if (response.status === 'not_authorized') {
 			login();
 		} else {
