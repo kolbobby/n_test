@@ -33,7 +33,7 @@ function login() {
 function testAPI() {
 	$(document).ready(function() {
 		FB.api('/me', function(response) {
-			alert(response.name);
+			$('#status').html('asdf');
 		});
 	})
 }
