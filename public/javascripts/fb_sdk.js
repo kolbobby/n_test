@@ -2,7 +2,7 @@ window.fbAsyncInit = function() {
 	// init the FB JS SDK
 	FB.init({
 		appId      : '277873042335090', // App ID from the App Dashboard
-		channelUrl : '', // Channel File for x-domain communication
+		channelUrl : '/channel.html', // Channel File for x-domain communication
 		status     : true, // check the login status upon init?
 		cookie     : true, // set sessions cookies to allow your server to access the session?
 		xfbml      : true  // parse XFBML tags on this page?
@@ -11,7 +11,7 @@ window.fbAsyncInit = function() {
 	// Additional initialization code such as adding Event Listeners goes here
 	FB.getLoginStatus(function(response) {
 		if (response.status === 'connected') {
-			testAPI();
+			alert("Connected");
 		} else if (response.status === 'not_authorized') {
 			login();
 		} else {
