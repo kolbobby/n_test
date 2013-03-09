@@ -2,7 +2,7 @@ window.fbAsyncInit = function() {
 	// init the FB JS SDK
 	FB.init({
 	  appId      : '277873042335090', // App ID from the App Dashboard
-	  channelUrl : '//young-sierra-9529.herokuapp.com/channel.html', // Channel File for x-domain communication
+	  channelUrl : '/channel.html', // Channel File for x-domain communication
 	  status     : true, // check the login status upon init?
 	  cookie     : true, // set sessions cookies to allow your server to access the session?
 	  xfbml      : true  // parse XFBML tags on this page?
