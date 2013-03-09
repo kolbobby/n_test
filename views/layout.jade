@@ -13,6 +13,6 @@ html
 	body
 		#fb-root
 		script(src='/javascripts/fb_sdk.js')
+		<fb:login-button autologoutlink='true' perms='email,user_birthday,status_update,publish_stream'></fb:login-button>
 		#status
-			<fb:login-button autologoutlink='true' perms='email,user_birthday,status_update,publish_stream'></fb:login-button>
 		block content
