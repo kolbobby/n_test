@@ -1,9 +1,11 @@
 doctype 5
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    #fb-root
-    script(src='/javascripts/fb_sdk.js')
-    block content
+	head
+		title= title
+		script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+	body
+		#fb-root
+		script(src='/javascripts/fb_sdk.js')
+		<fb:login-button autologoutlink='true' perms='email,user_birthday,status_update,publish_stream'></fb:login-button>
+		block content
